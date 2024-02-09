@@ -2,7 +2,6 @@ const express = require('express');
 const {listData, analyzedData} = require('./data/controller/dados');
 const { preprocessData } = require('./data/controller/dados');
 const router =express();
-
 router.get('/list', listData);
 
 // router.get('/writeData', async (req, res) => {
