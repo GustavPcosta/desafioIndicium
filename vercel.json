@@ -2,13 +2,13 @@
     "version":2,
     "builds":[
         {
-            "code-challenge":"code-challenge/index.js",
+            "src":"code-challenge/index.js",
             "use":"@vercel/node"
         }
     ],
     "routes":[
         {
-            "code-challenge":"(.*)",
+            "src":"(.*)",
             "dest":"code-challenge/index.js"
         }
     ]
