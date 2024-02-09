@@ -1,15 +1,16 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src": "code-challenge/rotas.js",
-            "use": "@vercel/node"
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "code-challenge/index.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes":[
-        {
-            "src": "(.*)",
-            "dest": "code-challenge/rotas.js"
-        }
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "code-challenge/index.js"
+      }
     ]
-}
+  }
+  
