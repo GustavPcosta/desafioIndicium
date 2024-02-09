@@ -1,0 +1,15 @@
+{
+    "version":2,
+    "builds":[
+        {
+            "code-challenge":"code-challenge/index.js",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "code-challenge":"(.*)",
+            "dest":"code-challenge/index.js"
+        }
+    ]
+}
