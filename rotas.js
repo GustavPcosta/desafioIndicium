@@ -1,7 +1,7 @@
 const express = require('express');
 const {listData, analyzedData} = require('./data/controller/dados');
 const { preprocessData } = require('./data/controller/dados');
-const router =express();
+const router = express();
 router.get('/list', listData);
 
 // router.get('/writeData', async (req, res) => {
@@ -16,6 +16,4 @@ router.post('/pre-process',preprocessData);
 router.post('/analyzed',analyzedData);
 
 
-module.exports ={
-    router
-}
+module.exports = router

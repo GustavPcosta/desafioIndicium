@@ -1,11 +1,11 @@
-const express = require('express');
+const express = require('express')
 const app = express();
-const  port = 3001;
-const router = require('./rotas')
-
+const rotas = require('./rotas')
+const port = 200
 app.use(express.json());
-app.use(router)
+app.use(rotas)
+
 
 app.listen(port, () => {
-    console.log("o servideor estar rodando na porta 3001");
+    console.log("o servideor estar rodando na porta 200");
 });
